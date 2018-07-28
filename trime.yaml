@@ -1977,7 +1977,7 @@ preset_keyboards:
       - {click: K_symbols0y, width: 12.5}
     name: "数学1"
     width: 13.5
-  symbols62:
+  symbols63:
     ascii_mode: 1
     author: flypy.com
     keys:
@@ -2019,7 +2019,7 @@ preset_keyboards:
       - {click: K_symbols0y, width: 12.5}
     name: "数学2"
     width: 13.5
-  symbols63:
+  symbols62:
     ascii_mode: 1
     author: flypy.com
     keys:
