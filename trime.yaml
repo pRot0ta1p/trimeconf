@@ -936,9 +936,9 @@ preset_keyboards:
       - {click: x, swipe_up: X, long_click: cut2, key_text_color: xnhe, key_back_color: BBB, hilited_key_back_color: BBH, key_symbol_offset_x: 0, key_symbol_offset_x: 0}
       - {click: c, long_click: copy2, swipe_up: C, key_back_color: CCC, hilited_key_back_color: CCH, key_symbol_offset_x: 0}
       - {click: v, long_click: paste2, swipe_up: V, key_back_color: AAA, hilited_key_back_color: AAH, key_symbol_offset_x: 0}
-      - {click: b, long_click: "（）{Left}", swipe_up: B, key_back_color: BBB, hilited_key_back_color: BBH}
-      - {click: n, long_click: "：", swipe_up: N, key_text_color: xnhe, key_back_color: CCC, hilited_key_back_color: CCH}
-      - {click: m, long_click: "；", swipe_up: M, key_back_color: AAA, hilited_key_back_color: AAH}
+      - {click: b, long_click: '《', swipe_up: B, key_back_color: BBB, hilited_key_back_color: BBH}
+      - {click: n, long_click: '》', swipe_up: N, key_text_color: xnhe, key_back_color: CCC, hilited_key_back_color: CCH}
+      - {click: m, hint: '/', swipe_down: '/', long_click: '？', swipe_up: M, key_back_color: AAA, hilited_key_back_color: AAH}
       - {click: BackSpace, key_text_offset_y: 1, key_back_color: gnb, hilited_key_back_color: gnh, key_symbol_color: gns, width: 15}
       # 第四行
       - {height: *VJM, click: K_symbols123, composing: K_symbols123, key_symbol_offset_x: 0, long_click: K_use, key_back_color: gnb, hilited_key_back_color: gnh, key_symbol_color: gns, width: 15} #方案选择
