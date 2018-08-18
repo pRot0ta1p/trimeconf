@@ -9,31 +9,31 @@ author: pRoMMMModE
 height:
 # ----------键盘高度调整------------
 
-  A: &VJG 57.9        #主辅键盘键高  自定   
-  B: &VJM 58.3        #主辅键盘末行键高  B≈A，如主键盘和符号键盘不等高，调整此数
-  C: &FJG 46.3         #符号键盘键高  C=A*4/5=46.4取整随意
+  A: &VJG 48.5        #主辅键盘键高  自定   
+  B: &VJM 48.5        #主辅键盘末行键高  B≈A，如主键盘和符号键盘不等高，调整此数
+  C: &FJG 38.8         #符号键盘键高  C=A*4/5=46.4取整随意
 
-  D: &HXG 44         #候选区高度
+  D: &HXG 40         #候选区高度
   
 # -------调整完毕，如果出现上下档字符偏离键位，可调节下面项------
 
-  E: &DsymY 1.8          #主键盘上档文字纵向位置调节，负数上移，下同
-  F: &DsymX 3            #主键盘上档文字横向位置调节，负数左移
-  G: &DtextY -0.5             #主键盘字母纵向位置调节
+  E: &DsymY 0.5          #主键盘上档文字纵向位置调节，负数上移，下同
+  F: &DsymX 3.8            #主键盘上档文字横向位置调节，负数左移
+  G: &DtextY -1             #主键盘字母纵向位置调节
   H: &VJtextY 0            #助记键盘字母纵向位置调节
-  I: &VJhintY -3         #助记键盘韵母纵向位置调节
+  I: &VJhintY -2.5         #助记键盘韵母纵向位置调节
   J: &VJhintX -3.5
 
 #-------调节尽量以配色中键高最低的配色为标准------
 other:
 #主键盘结构（四行）
-  a: &VJH 1         #主键盘行距  建议不动
-  b: &VJL 1         #主键盘列距
-  c: &VJY 1         #主键盘圆角
+  a: &VJH 2.5         #主键盘行距  建议不动
+  b: &VJL 2.5         #主键盘列距
+  c: &VJY 40         #主键盘圆角
 #符号键盘结构（五行）
-  d: &FJH 1         #符号键盘行距  建议不动
-  e: &FJL 1         #符号键盘列距
-  f: &FJY 1         #符号键盘圆角
+  d: &FJH 2.5         #符号键盘行距  建议不动
+  e: &FJL 2.5         #符号键盘列距
+  f: &FJY 40         #符号键盘圆角
 
 style:
   auto_caps: false #自动句首大写:true|false|ascii
@@ -83,7 +83,7 @@ style:
   key_font: symbol.ttf #键盘字型
   key_height: *FJG #符号键盘键高
   key_long_text_size: 15 #长标签字号
-  key_text_size: 21 #键字号
+  key_text_size: 19 #键字号
   key_width: 10.0 #键宽，占银幕宽的百分比
   keyboards: [.defualt, default, letter, use, menu, symbols, symbols01, symbols11, symbols12, symbols13, symbols14, symbols21, symbols22, symbols31, symbols32, symbols33, symbols34, symbols35, symbols36, symbols41, symbols42, symbols43, symbols44, symbols51, symbols52, symbols53, symbols54, symbols55, symbols56, symbols61, symbols62, symbols63, symbols64, symbols65, symbols71, symbols72, symbols73, symbols74, symbols75, symbols81, symbols82, symbols83, symbols91, symbols92, symbols93, symbolsA1, symbolsA2, symbolsA3, symbolsA4, symbolsA5, symbolsB1, symbolsB2, symbolsB3, symbolsC1, symbolsC2, symbolsC3, symbolsC4, symbolsC5, symbolsD1, symbolsD2] #键盘配置
   label_text_size: 15 #标签字号
@@ -102,7 +102,7 @@ style:
   show_preview: true #按键提示
   speech_opencc_config: none #语音输入简繁转换
   symbol_font: symbol.ttf #符号字型
-  symbol_text_size: 12 #符号字号
+  symbol_text_size: 10 #符号字号
   text_font: latin.ttf #编码字型
   text_size: 10 #编码区字号
   vertical_correction: 0 #按键纵向偏移，负数下移接触面
@@ -507,7 +507,7 @@ preset_color_schemes:
     hilited_text_color: 0xffffffff
     key_back_color: ABCkeyF.png
     #key_border_color: 0xffeceff1
-    key_symbol_color: 0xff919191
+    key_symbol_color: 0xff646464
     key_text_color: 0xff333333
     keyboard_back_color: 0xffeeeeee
     label_color: 0xff333333
@@ -912,16 +912,16 @@ preset_keyboards:
       - {click: e, hint: 3, swipe_down: 3, long_click: '#', swipe_up: E, key_text_color: xnhe, key_back_color: CCC, hilited_key_back_color: CCH}
       - {click: r, hint: 4, swipe_down: 4, long_click: '￥', swipe_up: R, key_back_color: AAA, hilited_key_back_color: AAH}
       - {click: t, hint: 5, swipe_down: 5, long_click: '%', swipe_up: T, key_back_color: BBB, hilited_key_back_color: BBH}
-      - {click: y, hint: 6, swipe_down: 6, long_click: "……", swipe_up: Y, key_back_color: CCC, hilited_key_back_color: CCH}
+      - {click: y, hint: 6, swipe_down: 6, long_click: "……", key_symbol_offset_x: 3.5, key_symbol_offset_y: -3, swipe_up: Y, key_back_color: CCC, hilited_key_back_color: CCH}
       - {click: u, hint: 7, swipe_down: 7, long_click: '&', swipe_up: U, key_back_color: AAA, hilited_key_back_color: AAH}
       - {click: i, hint: 8, swipe_down: 8, long_click: '*', swipe_up: I, key_back_color: BBB, hilited_key_back_color: BBH}
-      - {click: o, hint: 9, swipe_down: 9, long_click: '（', swipe_up: O, key_back_color: CCC, hilited_key_back_color: CCH}
+      - {click: o, hint: 9, swipe_down: 9, long_click: '（', key_symbol_offset_x: 3.5, swipe_up: O, key_back_color: CCC, hilited_key_back_color: CCH}
       - {click: p, hint: 0, swipe_down: 0, long_click: '）', swipe_up: P, key_back_color: AAA, hilited_key_back_color: AAH}
       # 第二行
       - {click: a, long_click: select_all2, swipe_up: A, key_text_color: zyt, key_back_color: zyb, key_symbol_color: zyt, hilited_key_text_color: zyt, hilited_key_back_color: zyb, hilited_key_symbol_color: zyt, width: 5}
       - {click: a, long_click: select_all2, swipe_up: A, key_back_color: AAA, hilited_key_back_color: AAH ,key_symbol_offset_x: 0}
       - {click: s, hint: '·', swipe_down: '·', long_click: '~', swipe_up: S, key_back_color: BBB, hilited_key_back_color: BBH}
-      - {click: d, hint: '-', swipe_down: '-', long_click: '——', swipe_up: D, key_back_color: CCC, hilited_key_back_color: CCH}
+      - {click: d, hint: '-', swipe_down: '-', long_click: '——',key_symbol_offset_x: 3.5,  swipe_up: D, key_back_color: CCC, hilited_key_back_color: CCH}
       - {click: f, hint: '=', swipe_down: '=', long_click: '+', swipe_up: F, key_back_color: AAA, hilited_key_back_color: AAH}
       - {click: g, hint: '【', swipe_down: '【', long_click: '{', swipe_up: G, symbol_text_size: 11, key_back_color: BBB, hilited_key_back_color: BBH}
       - {click: h, hint: '】', swipe_down: '】', long_click: '}', swipe_up: H, key_text_color: xnhe, key_back_color: CCC, hilited_key_back_color: CCH}
@@ -936,7 +936,7 @@ preset_keyboards:
       - {click: x, swipe_up: X, long_click: cut2, key_text_color: xnhe, key_back_color: BBB, hilited_key_back_color: BBH, key_symbol_offset_x: 0, key_symbol_offset_x: 0}
       - {click: c, long_click: copy2, swipe_up: C, key_back_color: CCC, hilited_key_back_color: CCH, key_symbol_offset_x: 0}
       - {click: v, long_click: paste2, swipe_up: V, key_back_color: AAA, hilited_key_back_color: AAH, key_symbol_offset_x: 0}
-      - {click: b, long_click: '《', swipe_up: B, key_back_color: BBB, hilited_key_back_color: BBH}
+      - {click: b, long_click: '《', key_symbol_offset_x: 3.5, swipe_up: B, key_back_color: BBB, hilited_key_back_color: BBH}
       - {click: n, long_click: '》', swipe_up: N, key_text_color: xnhe, key_back_color: CCC, hilited_key_back_color: CCH}
       - {click: m, hint: '/', swipe_down: '/', long_click: '？', swipe_up: M, key_back_color: AAA, hilited_key_back_color: AAH}
       - {click: BackSpace, key_text_offset_y: 1, key_back_color: gnb, hilited_key_back_color: gnh, key_symbol_color: gns, width: 15}
